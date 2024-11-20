@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Helper - Schedule Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>School Helper - Schedule Manager</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">School Info</a></li>
+                <li><a href="schedule.html">Schedule Manager</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="schedule-manager">
+            <h2>Schedule Manager</h2>
+            <form id="schedule-form">
+                <label for="event">Event:</label>
+                <input type="text" id="event" name="event" required>
+                
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <button type="submit">Add to Schedule</button>
+            </form>
+            <ul id="schedule-list">
+                <!-- 일정이 여기 표시됩니다 -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 School Helper</p>
+    </footer>
+
+    <script src="schedule_script.js"></script>
+</body>
+</html>
